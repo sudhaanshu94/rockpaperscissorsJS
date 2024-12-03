@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissors</title>
+    <link rel="stylesheet" href="styles.css" />
+    <audio id="winSound" src="sound/win-sound1.mp3" preload="auto"></audio>
+    <audio id="loseSound" src="sound/lose-sound2.mp3" preload="auto"></audio>
+    <audio id="tapSound" src="sound/tap-sound.mp3" preload="auto"></audio>
+    <audio id="resetSound" src="sound/reset-sound.mp3" preload="auto"></audio>
+</head>
+<body class="lighting">
+    <div class="heading">Rock Paper Scissors</div>
+    <main>
+        <div class="game">
+            <div class="movebox">
+                <button class="move" id="rock"><img src="image/rock.png" alt="Rock"></button>
+                <button class="move" id="paper"><img src="image/paper.png" alt="Paper"></button>
+                <button class="move" id="scissors"><img src="image/scissors.png" alt="Scissors"></button>
+            </div>
+        </div>
+        <div class="scorebox">
+            <div class="p1">
+                <span class="score">-</span>
+                <span class="player">You</span>
+            </div>
+            <div class="p2">
+                <span class="score">-</span>
+                <span class="player">Bot</span>
+            </div>
+        </div>
+        <div class="disclaimer">First to score 5 WINS!</div>
+        <div class="resboxouter">
+            <span class="resbox">
+                PICK OUT OF THREE ABOVE
+            </span>
+        </div>
+        <div class="resetdiv">
+            <button id="port">My Portfolio</button>
+            <button id="reset">Reset game</button>
+        </div>
+    </main>
+    <div class="msgnew hide">
+        <p id="msg"></p>
+        <button id="new-btn">New Game</button>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>
